@@ -1,0 +1,526 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color: gray;
+	font-family: Lato;
+}
+
+/*-----Header riht menu----*/
+
+h1 {
+	color: aliceblue;
+	font-size: 70px;
+	padding: 0;
+	margin: 0;
+}
+
+.header_right_side {
+	display: grid;
+}
+
+.seacrh {
+	grid-column: 1/2;
+	grid-row: 1;
+}
+
+.navigation {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+icon_header {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+
+.seacrch svg {
+	width: 17px;
+}
+
+
+.navigat_a {
+
+	line-height: 50px;
+	/*ровнение меню по вертикали*/
+}
+
+
+
+/*-----Header riht menu End----*/
+
+
+
+.container {
+	max-width: 1140px;
+	margin: auto;
+}
+
+.top {
+	display: flex;
+}
+
+.logo {
+	flex-basis: 300px;
+	flex-grow: 1;
+}
+
+
+/*----CONTAINER MENU---*/
+.container_menu {
+	background-color: #2b2b2b;
+	color: #888888;
+	list-style: none;
+	margin: 0;
+	display: grid;
+	height: 60px;
+	font-size: 20px;
+	line-height: 60px;
+	padding-left: 0;
+
+	margin-bottom: 10px;
+
+}
+
+
+/* ссылки в горизонтальном меню*/
+.list {
+	text-transform: uppercase;
+	text-decoration: none;
+	/*убираю подчеркивание текста ссылок*/
+	color: #fff;
+	padding: 0px 15px;
+	/*отступ*/
+	line-height: 50px;
+	/*ровнение меню по вертикали*/
+	border-right: 0.5px solid #888;
+	/*!!!! Пыталась сделать бордюр справа но высоту его не смогла понять как изменить !!!*/
+	-moz-transition: all 0.3s 0.01s ease;
+	/*делаем плавный переход*/
+	-o-transition: all 0.3s 0.01s ease;
+	-webkit-transition: all 0.3s 0.01s ease;
+	margin-left: 17.2%;
+	/*  КОСТЫЛЬ позиционирования  */
+}
+
+
+.home {
+
+	grid-column: 1/5;
+	grid-row: 1;
+}
+
+.products {
+	;
+	grid-column: 2/5;
+	grid-row: 1;
+}
+
+.sale {
+
+	grid-column: 3/5;
+	grid-row: 1;
+}
+
+.about {
+
+	grid-column: 4/5;
+	grid-row: 1;
+}
+
+.contact {
+	margin-left: -9%;
+	/*костыль тут тоже*/
+	grid-column: 5;
+	grid-row: 1;
+}
+
+.products {
+	position: relative;
+}
+
+.products:hover .submenu {
+	opacity: 1:
+		/*!!!!!!!пыталась сделать вложеность меню!!!!!!!!!!*/
+}
+
+
+
+.submenu {
+	position: absolute;
+	width: 100%;
+
+	text-transform: uppercase;
+	text-decoration: none;
+	/*убираем подчеркивание текста ссылок*/
+	color: #fff;
+	/*меняем цвет ссылок*/
+	padding: 0px 15px;
+	/*добавляем отступ*/
+	opacity: 0;
+	top: 0;
+
+}
+
+
+
+/*----CONTAINER MENU END---*/
+/*-----LEFT MENU AND StORE-----*/
+
+.menu_and_store {
+	display: grid;
+	margin: auto;
+	max-width: 1140px;
+
+	/* ТУТ костыль--- здесь расстояние не соответствует действительности */
+	margin-bottom: 10px;
+}
+
+
+
+.left_menu {
+
+	grid-column: 1;
+	grid-row: 1;
+	margin: 0;
+	/*костыль позиционирования  */
+
+
+}
+
+
+
+ul {
+	list-style: none;
+	margin: 0;
+
+}
+
+.collection_one {
+	padding: 0;
+	list-style: none;
+}
+
+.collection_one li:hover {
+	background: #545353;
+	padding: 10px 0 10x 20px;
+}
+
+.collection_one li {
+	border: 1px solid #545353;
+	margin: 1px 0 0 0;
+	width: 285px;
+	background: #222;
+	color: #fff;
+	padding: 12px 20px;
+	border: 1px solid #666;
+	transition: 0.5s all;
+	font-size: 20px;
+	margin-left: -40px;
+	/* !!!!!вот ТУТ костыль я не могла понять почему смещено меню вправо*/
+}
+
+.collect_menu {
+	margin-bottom: 20px;
+}
+
+.left_menu h2 {
+	font: 27px Lato;
+	padding: 12px 20px;
+	font: 27px Lato text-transform: uppercase;
+	background: #000000;
+	border: 1px solid #545353;
+	color: aliceblue;
+	margin: 0;
+	width: 285px;
+
+}
+
+a {
+	text-decoration: none;
+	/*убираем подчеркивание текста ссылок*/
+	color: #fff;
+	/*меняем цвет ссылок*/
+}
+
+
+
+/*     Gallery shop    */
+
+.button_shop {
+	display: grid;
+	background-color: gray;
+	list-style: none;
+	margin: 0;
+	display: grid;
+	height: 29px;
+
+	line-height: 29px;
+	padding-left: 0;
+	max-width: 240px;
+	font-size: 13px;
+	color: #888888;
+}
+
+.shop_decor {
+	grid-column: 2;
+	grid-row: 1;
+	background-color: #fff;
+	margin: 0;
+
+}
+
+
+.button_shop_a {
+
+	display: grid;
+
+
+}
+
+
+
+.shop_li1 {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.shop_li2 {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.shop_li3 {
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.shop_li4 {
+	grid-column: 4;
+	grid-row: 1;
+}
+
+
+
+.products_shop {
+	display: grid;
+	grid-gap: 20px;
+}
+
+.shop1 {
+	grid-column: 1;
+	grid-row: 1;
+
+}
+
+.shop2 {
+	grid-column: 2;
+	grid-row: 1;
+
+}
+
+.shop3 {
+	grid-column: 3;
+	grid-row: 1;
+
+}
+
+.shop4 {
+	grid-column: 1;
+	grid-row: 2;
+
+}
+
+.shop5 {
+	grid-column: 2;
+	grid-row: 2;
+
+}
+
+.shop6 {
+	grid-column: 3;
+	grid-row: 2;
+
+}
+
+.shop7 {
+	grid-column: 1;
+	grid-row: 3;
+
+}
+
+.shop8 {
+	grid-column: 2;
+	grid-row: 3;
+
+}
+
+.shop9 {
+	grid-column: 3;
+	grid-row: 3;
+
+}
+
+
+
+
+#foto_shop-1 {
+	background-image: url(../shop/rozetta%201.jpg);
+	background-position: center;
+	/*позиционирование картинок неудачный вариант, мне бы хотелось понять как писать код короче*/
+	background-size: cover;
+	min-height: 258px;
+	min-width: 258px;
+
+}
+
+/* 481 288 размер ячейки
+258 размер картинки*/
+
+#foto_shop-2 {
+	background-image: url(../shop/rozetta%201.jpg);
+	background-position: center;
+	background-size: cover;
+	min-height: 258px;
+	min-width: 258px;
+}
+
+#foto_shop-3 {
+	background-image: url(../shop/rozetta%201.jpg);
+	background-position: center;
+	background-size: cover;
+	min-height: 258px;
+	min-width: 258px;
+}
+
+#foto_shop-4 {
+	background-image: url(../shop/rozetta%201.jpg);
+	background-position: center;
+	background-size: cover;
+	min-height: 258px;
+	min-width: 258px;
+
+}
+
+#foto_shop-5 {
+	background-image: url(../shop/rozetta%201.jpg);
+	background-position: center;
+	background-size: cover;
+	min-height: 258px;
+	min-width: 258px;
+}
+
+#foto_shop-6 {
+	background-image: url(../shop/rozetta%201.jpg);
+	background-position: center;
+	background-size: cover;
+	min-height: 258px;
+	min-width: 258px;
+}
+
+#foto_shop-7 {
+	background-image: url(../shop/rozetta%201.jpg);
+	background-position: center;
+	background-size: cover;
+	min-height: 258px;
+	min-width: 258px;
+}
+
+#foto_shop-8 {
+	background-image: url(../shop/rozetta%201.jpg);
+	background-position: center;
+	background-size: cover;
+	min-height: 258px;
+	min-width: 258px;
+}
+
+#foto_shop-9 {
+	background-image: url(../shop/rozetta%201.jpg);
+	background-position: center;
+	background-size: cover;
+	min-height: 258px;
+	min-width: 258px;
+}
+
+/*-----LEFT MENU AND StORE END-----*/
+
+/*---FOTER---*/
+
+.footer {
+	margin: 0;
+	background-color: #2b2b2b;
+	min-height: 197px;
+
+}
+
+
+.menu_foot {
+	margin: auto;
+	display: grid;
+	grid-gap: 10px;
+	max-width: 1140px;
+	max-height: 197px;
+
+
+}
+
+
+.foot1 {
+	grid-column: 1/4;
+	grid-row: 1;
+	margin-left: -5%;
+	margin-top: 19px;
+}
+
+.foot2 {
+	grid-column: 2/4;
+	grid-row: 1;
+	margin-left: -5%;
+	margin-top: 19px;
+
+}
+
+
+.foot3 {
+	grid-column: 3/4;
+	grid-row: 1;
+	margin-top: 19px;
+
+}
+
+.foot4 {
+	grid-column: 4;
+	grid-row: 1;
+	margin-left: -30%;
+	/*Тут  тоже костыль */
+	margin-top: 19px;
+}
+
+.footer_li {
+	margin-bottom: 16px;
+
+
+}
+
+
+.footer_a {
+	font-size: 14px;
+	color: gray;
+	font-family: Lato;
+}
+
+
+.footer_a:hover {
+	color: #fff;
+
+}
+
+p {
+	margin-left: 150px;
+	font-size: 10px;
+}
